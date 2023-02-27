@@ -1,0 +1,282 @@
+/*
+ * @Date           : 2022-04-03 17:18:04
+ * @LastEditTime   : 2022-04-04 19:39:45
+ * @Description    :
+ */
+/* app global css */
+
+
+.q-table th{
+  font-weight: 800;
+    font-size: 14px;
+    /* user-select: text; */
+}
+
+
+.form-item-label{
+  height: 40px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+
+
+.q-item-no-link-highlighting{
+  color: black;
+  background-color: $grey-4;
+}
+
+
+.break-all{
+  word-break: break-all;
+}
+
+
+.border-grey{
+  border: 1px solid $grey;
+}
+
+@mixin zindex_fn( $value...) {
+  @for $i from 0 to length($value) {
+    .z#{nth($value, $i + 1)} {
+     z-index: nth($value, $i + 1) ;
+
+
+    }
+  }
+}
+
+@include  zindex_fn(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,  );
+
+
+
+@mixin hfn( $value...) {
+  @for $i from 0 to length($value) {
+    .h#{nth($value, $i + 1)} {
+      height: nth($value, $i + 1)*1px;
+
+
+    }
+  }
+}
+
+@include  hfn(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,24,26,30,36,40,50,60,100,120,140,160,180,200,220,240,300,350,400,500,1200,1500,1600,1680,1980 );
+
+
+
+@mixin lhfn( $value...) {
+  @for $i from 0 to length($value) {
+    .lh#{nth($value, $i + 1)} {
+      line-height: nth($value, $i + 1)*1px;
+
+
+    }
+  }
+}
+
+@include  lhfn(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,24,26,30,36,40,42,50,60,100,120,140,160,180,200,220,240,300,350,400,500,1200,1500,1600,1680,1980 );
+
+
+
+@mixin wfn( $value...) {
+  @for $i from 0 to length($value) {
+    .w#{nth($value, $i + 1)} {
+      width: nth($value, $i + 1)*1px;
+
+
+    }
+  }
+}
+
+@include  wfn(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,24,26,30,36,40,50,60,100,120,140,160,180,200,220,240,500,600,800,1200,1500,1600,1680,1980 );
+
+
+@mixin wvwfn( $value...) {
+  @for $i from 0 to length($value) {
+    .w#{nth($value, $i + 1)}vw {
+      width: nth($value, $i + 1)*1vw;
+
+
+    }
+  }
+}
+
+@include  wvwfn(40,50,60,70,80,90,100 );
+
+@mixin mwvmfn( $value...) {
+  @for $i from 0 to length($value) {
+    .mw#{nth($value, $i + 1)}vw {
+      max-width: nth($value, $i + 1)*1vw !important;
+
+
+    }
+  }
+}
+
+@include  mwvmfn(40,50,60,70,80,90,100 );
+
+
+
+
+
+
+
+@mixin fzfn( $value...) {
+  @for $i from 0 to length($value) {
+    .fz#{nth($value, $i + 1)} {
+      font-size: nth($value, $i + 1)*1px;
+
+    }
+  }
+}
+
+@include  fzfn(10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100 );
+
+
+
+
+@mixin brfn( $value...) {
+  @for $i from 0 to length($value) {
+    .br#{nth($value, $i + 1)} {
+      border-radius: nth($value, $i + 1)*1px;
+
+    }
+  }
+}
+
+@include  brfn(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,24,26,30, );
+
+
+
+
+
+
+
+
+
+@mixin fwfn( $value...) {
+  @for $i from 0 to length($value) {
+    .fw#{nth($value, $i + 1)} {
+      font-weight: nth($value, $i + 1);
+
+    }
+  }
+}
+
+@include  fwfn(400,500,600,700,800,900 );
+
+
+
+
+@mixin padding_fn( $value...) {
+  @for $i from 0 to length($value) {
+    .pt#{nth($value, $i + 1)} {
+      padding-top: nth($value, $i + 1)*1px;
+
+
+    }
+  }
+  @for $i from 0 to length($value) {
+    .pb#{nth($value, $i + 1)} {
+
+      padding-bottom: nth($value, $i + 1)*1px;
+
+    }
+  }
+  @for $i from 0 to length($value) {
+    .pr#{nth($value, $i + 1)} {
+      padding-right: nth($value, $i + 1)*1px;
+
+
+    }
+  }
+  @for $i from 0 to length($value) {
+    .pl#{nth($value, $i + 1)} {
+
+      padding-left: nth($value, $i + 1)*1px;
+
+    }
+  }
+
+
+  @for $i from 0 to length($value) {
+    .py#{nth($value, $i + 1)} {
+      padding-top: nth($value, $i + 1)*1px;
+      padding-bottom: nth($value, $i + 1)*1px;
+
+    }
+  }
+  @for $i from 0 to length($value) {
+    .px#{nth($value, $i + 1)} {
+      padding-right: nth($value, $i + 1)*1px;
+      padding-left: nth($value, $i + 1)*1px;
+
+    }
+  }
+}
+
+
+@include  padding_fn(2,4,6,8,10,12,15,18,20,22,25,30,35,40,45,50 );
+
+
+
+
+
+@mixin margin_fn( $value...) {
+
+
+  @for $i from 0 to length($value) {
+    .mt#{nth($value, $i + 1)} {
+      margin-top: nth($value, $i + 1)*1px;
+
+
+    }
+  }
+  @for $i from 0 to length($value) {
+    .mb#{nth($value, $i + 1)} {
+
+      margin-bottom: nth($value, $i + 1)*1px;
+
+    }
+  }
+  @for $i from 0 to length($value) {
+    .mr#{nth($value, $i + 1)} {
+      margin-right: nth($value, $i + 1)*1px;
+
+
+    }
+  }
+  @for $i from 0 to length($value) {
+    .ml#{nth($value, $i + 1)} {
+      margin-left: nth($value, $i + 1)*1px;
+
+
+    }
+  }
+
+  @for $i from 0 to length($value) {
+    .my#{nth($value, $i + 1)} {
+      margin-top: nth($value, $i + 1)*1px;
+      margin-bottom: nth($value, $i + 1)*1px;
+
+    }
+  }
+
+  @for $i from 0 to length($value) {
+    .mx#{nth($value, $i + 1)} {
+      margin-left: nth($value, $i + 1)*1px;
+      margin-right: nth($value, $i + 1)*1px;
+
+    }
+  }
+}
+
+
+@include  margin_fn(10,12,15,18,20,22,25,30,35,40,45,50,60,70,80,90,100 );
+
+
+
+.dialog-wapper-scroll-area{
+  height: 800px;
+  max-width: 70vw
+}

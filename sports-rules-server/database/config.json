@@ -1,0 +1,19 @@
+{
+  "development": {
+    "username": "root",
+    "password": "123456",
+    "database": "sport_rules_1",
+    "host": "127.0.0.1",
+    "port":"3306",
+    "dialect": "mysql"
+  },
+
+  "production": {
+    "username": "tyweb",
+    "password": "tyweb@123",
+    "database": "sports_rules_prod",
+    "host": "127.0.0.1",
+    "port":6606,
+    "dialect": "mysql"
+  }
+}
